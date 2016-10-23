@@ -1,0 +1,30 @@
+<html>
+<body>
+<script>
+function my()
+{
+
+try{
+var x=document.getElementById("demo").value;
+if(x.length<8)
+ throw "too short";
+else if(x.length>15)
+ throw "too large";
+else throw "strong";
+}
+catch(err)
+{
+var y=document.getElementById("mess");
+y.innerHTML="Error: " + err + ".";
+}
+}
+</script>
+
+<h1>My First JavaScript</h1>
+<p>Password</p>
+<input id="demo" type="password">
+<button type="button" onclick="my()">send</button>
+<p id="mess"></p>
+
+</body>
+</html>

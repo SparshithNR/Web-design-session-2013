@@ -1,0 +1,42 @@
+<html>
+<body>
+<script>
+function changeImage()
+{
+element=document.getElementById('myimage')
+if (element.src.match("sp2"))
+  {
+	
+  x=document.getElementById("colr") 
+        x.innerHTML="image changed";
+  element.src="sp1.png";
+	
+  }
+else
+  {
+  element.src="sp2.png";
+		
+	x=document.getElementById("colr") 
+        x.innerHTML="change image!!!";
+  }
+}
+function changeColor()
+{
+ x=document.getElementById("colr") 
+x.style.color="#ff0000";
+}
+function changeColor2()
+{
+ x=document.getElementById("colr") 
+x.style.color="#000000";
+}
+</script>
+<p id="colr">change image!!!</p>
+<img  id="myimage" onclick="changeImage()"
+src="sp1.png" width="400" height="600"><br>
+`<button type="button" onmouseover="changeColor()" onmouseout="changeColor2()">change!!</button>
+
+ 
+</body>
+
+</html>

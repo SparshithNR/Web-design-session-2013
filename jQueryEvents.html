@@ -1,0 +1,55 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.7.2.min.js" ></script>
+<script type="text/javascript">
+$(document).ready(
+function hide()
+{
+$("#img1").hide();
+}
+)
+function hide()
+{
+$("#im").hide(1000);
+}
+function show()
+{
+$("#img1").show(1000);
+}
+function slidedown()
+{
+$("#im").slideDown(1000);
+}
+function slideup()
+{
+$("#im").slideUp(1000);
+}
+function fadeout()
+{
+$("#img1").fadeOut(1000);
+}
+function fadein()
+{
+$("#img1").fadeIn(1000);
+}
+function slide()
+{
+$("#im").css("border","2px red solid");
+}
+</script>
+</head>
+<body>
+<img id="img1" src="s.png"  height="300px" width="300px">
+<img id="im" src="sp2.png"  height="300px" width="300px">
+
+<button onmouseover="hide();">hide</button>
+<button onmouseover="show();">show</button>
+<button onmouseover="fadeout();">fadeout</button>
+<button onmouseover="fadein();">fadein</button>
+<button onmouseover="slide();">style</button>
+<button onmouseover="slideup();">slideup</button>
+<button onmouseover="slidedown();">slidedown</button>
+
+<p>visit Api.Jquery.org</p>
+</body>
+</html>

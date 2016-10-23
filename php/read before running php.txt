@@ -1,0 +1,8 @@
+install XAMPP
+goto this location
+os(c)->xampp->htdocs and paste php file there.
+start xampp
+open chrome.
+in url bar:
+localhost/php/database.php
+:-)

@@ -1,0 +1,107 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.7.2.min.js" ></script>
+<script type="text/javascript">
+$(document).ready(
+function hide()
+{
+$("#tb").hide();
+})
+$(document).ready
+(
+function hidea()
+{
+$("#gs").hide();
+}
+)
+function hide()
+{
+$("#tb").hide(1000);
+}
+function hideb()
+{
+$("#gs").hide(1000);
+}
+function show()
+{
+$("#img1").show(1000);
+}
+function slidedown()
+{
+$("#im").slideDown(1000);
+}
+function slideup()
+{
+$("#im").slideUp(1000);
+}
+function fadeout()
+{
+$("#img1").fadeOut(1000);
+}
+function tablea()
+{
+$("#tb").show(1000);
+}
+function fadein()
+{
+$("#img1").fadeIn(1000);
+}
+function slide()
+{
+$("#im").css("border","2px red solid");
+}
+
+function tablec()
+{
+$("#gs").show(1000);
+}
+
+function hidetablea()
+{
+$("#tb").hide(1000);
+}
+function hidetablec()
+{
+$("#gs").hide(1000);
+}
+
+function hide1()
+{
+$("#tb").hide(1000);
+$("#gs").hide(1000);
+}
+</script>
+</head>
+<body id="gd" >
+<table border="2px" onmouseout="hide1();"><tr><td rowspan=2><img id="img1" src="11B.jpg"  height="200px" width="200px"></td>
+<td   rowspan=2>< img id="im" src="11B.jpg"  height="200px" width="200px"></td>
+<td ><button onmouseover="tablea();hidetablec();" >show table</button></td>
+<td ><button onmouseover="tablec();hidetablea();">show table</button></td>
+</tr>
+<tr >
+<td onmouseover="tablea();">
+<table id="tb"  >
+
+
+<tr><td ><button onmouseover="show();">show</button ></td></tr>
+<tr><td><button  onmouseover="fadeout();">fadeout</button ></td></tr>
+<tr><td> <button onmouseover="fadein();">fadein</button ></td></tr>
+<tr><td><button  onmouseover="slide();">style</button ></td></tr>
+<tr><td><button  onmouseover="slideup();">slideup</button ></td></tr>
+<tr><td><button  onmouseover="slidedown();">slidedown</button ></td></tr>
+
+</table></td><td onmouseover="tablec();">
+<table id="gs" > 
+<tr><td ><button >show</button ></td></tr>
+<tr><td><button >fadeout</button ></td></tr>
+<tr><td> <button >fadein</button ></td></tr>
+<tr><td><button >style</button ></td></tr>
+<tr><td><button >slideup</button ></td></tr>
+<tr><td><button  >slidedown</button ></td></tr>
+
+</table></td>
+</tr></table>
+
+<p >visit Api.Jquery.org</p>
+</body>
+</html>
